@@ -1,0 +1,94 @@
+.footer {
+  width: 100vw;
+  background-color: #f9f5fb;
+  padding: 1rem 0 0.5rem; /* less vertical padding */
+  color: #4a2c61;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-box {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(189, 85, 190, 0.3);
+  padding: 1rem 1.5rem; /* reduced padding */
+  max-width: 1100px;
+  width: 95vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 110px; /* smaller height */
+  gap: 1.5rem;
+}
+
+.contact-info {
+  flex: 1 1 300px;
+  min-width: 280px;
+}
+
+.contact-info h3 {
+  color: #9b59b6;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  font-size: 1.2rem; /* smaller font */
+}
+
+.contact-info p {
+  margin: 0.2rem 0;
+  font-size: 0.9rem; /* smaller font */
+}
+
+.location-link {
+  color: #9c27b0;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.location-link:hover {
+  color: #6a1b9a;
+  text-decoration: underline;
+}
+
+.map-container {
+  flex: 1 1 350px;
+  min-width: 280px;
+  max-width: 400px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(189, 85, 190, 0.3);
+}
+
+.map-container iframe {
+  height: 100px; /* smaller map height */
+}
+
+.footer-bottom {
+  margin-top: 0.5rem;
+  font-size: 0.8rem; /* smaller font */
+  color: #6a1b9a;
+  font-weight: 600;
+}
+
+/* Responsive for small screens */
+@media (max-width: 700px) {
+  .footer-box {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 1rem;
+    min-height: auto;
+  }
+
+  .map-container,
+  .contact-info {
+    max-width: 100%;
+    flex: unset;
+  }
+
+  .map-container iframe {
+    height: 90px;
+  }
+}

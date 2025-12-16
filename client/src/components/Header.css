@@ -1,0 +1,108 @@
+/* Header.css */
+
+.header {
+  width: 100%;
+  background: linear-gradient(90deg, #b07bac, #e6b5d0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 10px rgba(176, 123, 172, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  background: linear-gradient(to right, #ffffff, #ffebf7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s, color 0.3s;
+  border-radius: 8px;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+/* Highlighted Services link */
+.services-link {
+  background: #fff;
+  color: #b07bac !important;
+  font-weight: bold;
+  border-radius: 12px;
+  padding: 0.5rem 1.2rem;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.services-link:hover {
+  background: #fbe3f1;
+  color: #a35d9e !important;
+  box-shadow: 0 0 14px rgba(255, 255, 255, 0.8);
+}
+
+/* Logout button without white background */
+.logout-btn {
+  all: unset;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  padding: 0.5rem 1.2rem;
+  border-radius: 12px;
+  font-weight: bold;
+  background: transparent;
+  color: #fff !important;
+  box-shadow: none;
+  border: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.logout-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff !important;
+  box-shadow: none;
+  border-color: #fff;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .nav-links a,
+  .logout-btn {
+    width: 100%;
+    text-align: left;
+    padding: 0.75rem 1rem;
+  }
+}

@@ -1,0 +1,91 @@
+/* Container for form */
+.container, .login-container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 2rem;
+  border-radius: 12px;
+  background: #f9f5fb; /* light lavender background */
+  box-shadow: 0 4px 10px rgba(189, 85, 190, 0.25);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #4a2c61; /* deep purple text */
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  color: #9b59b6;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+/* Input fields */
+form input {
+  width: 100%;
+  background-color: #f4e6fb; /* light lavender */
+  color: #4a2c61; /* deep purple text */
+  border: 2px solid #d7bde2;
+  padding: 0.75rem;
+  margin-bottom: 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+form input::placeholder {
+  color: #a186be;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #af7ac5;
+  box-shadow: 0 0 8px #af7ac580;
+  background-color: white;
+}
+
+/* Button style */
+button {
+  width: 100%;
+  padding: 0.75rem;
+  background: linear-gradient(45deg, #e91e63, #9c27b0);
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(233, 30, 99, 0.5);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #9c27b0, #e91e63);
+  box-shadow: 0 6px 18px rgba(156, 39, 176, 0.7);
+}
+
+/* Message text */
+.message {
+  margin-top: 10px;
+  color: #6a1b9a;
+  font-weight: 600;
+}
+
+/* Redirect text and link for login */
+.redirect-text {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #6a1b9a;
+  font-family: 'Poppins', sans-serif;
+}
+
+.redirect-link {
+  color: #9c27b0;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.redirect-link:hover {
+  color: #6a1b9a;
+  text-decoration: underline;
+}

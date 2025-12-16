@@ -1,0 +1,89 @@
+/* AppointmentForm.css */
+
+form {
+  background: #f8f0fc;
+  border-radius: 12px;
+  padding: 25px 30px;
+  max-width: 420px;
+  margin: 40px auto;
+  box-shadow: 0 8px 20px rgba(155, 89, 182, 0.2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #4b2c7a;
+}
+
+h2 {
+  text-align: center;
+  color: #7d4ca5;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #6b3e91;
+}
+
+input[type="email"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 18px;
+  border: 2px solid #c4a3e3;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #4b2c7a;
+  background-color: #faf5ff;
+  transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="date"]:focus,
+select:focus {
+  border-color: #9b59b6;
+  outline: none;
+  background-color: #f0e6fc;
+}
+
+select:disabled {
+  background-color: #e8def7;
+  color: #a692b8;
+  cursor: not-allowed;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px 0;
+  background: linear-gradient(135deg, #b57edc, #8e44ad);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(155, 89, 182, 0.4);
+  transition: background 0.4s ease;
+}
+
+button[type="submit"]:hover {
+  background: linear-gradient(135deg, #8e44ad, #b57edc);
+}
+
+p {
+  margin-top: 15px;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 600;
+  color: #7d4ca5;
+}
+
+p.error {
+  color: #e74c3c;
+}
+
+p.success {
+  color: #27ae60;
+}

@@ -1,0 +1,102 @@
+.services-container {
+  padding: 2rem;
+  background: #f9f5fb; /* light lavender background to match forms */
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #4a2c61; /* deep purple text */
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #9b59b6; /* deep purple heading */
+  font-weight: 700;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.8rem;
+  justify-content: center;
+}
+
+.service-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(189, 85, 190, 0.25); /* subtle purple shadow */
+  width: 260px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s;
+  color: #4a2c61;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(189, 85, 190, 0.4);
+}
+
+.service-card h2 {
+  margin-bottom: 1rem;
+  color: #9b59b6;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.details-list ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0.5rem;
+  color: #6a1b9a;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.details-list li {
+  background: #f4e6fb; /* very light lavender for items */
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.4rem;
+  border-radius: 8px;
+  color: #4a2c61;
+  font-weight: 500;
+}
+
+.subcategory {
+  cursor: pointer;
+  margin-bottom: 0.4rem;
+  color: #af7ac5;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.subcategory:hover {
+  color: #9b59b6;
+}
+
+.details-list ul ul {
+  padding-left: 1.2rem;
+  margin-top: 0.2rem;
+}
+
+.details-list ul ul li {
+  font-weight: 400;
+  background: #f9f0fc;
+  color: #6a1b9a;
+}
+
+.service-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 2px solid #7a4a9e; /* darker purple border */
+  box-shadow: 0 4px 12px rgba(189, 85, 190, 0.25);
+  width: 260px;
+  transition: transform 0.2s, border-color 0.3s ease;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  border-color: #9b59b6; /* lighter purple on hover */
+}
